@@ -1,0 +1,165 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e5f0ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.button-group input[type="submit"] {
+  background-color: #2b4c40; /* Verde escuro para combinar com o título */
+  color: #ffffff; /* Cor do texto */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 48%;
+}
+
+.button-group input[type="submit"]:hover {
+  background-color: #1e3930; /* Verde ainda mais escuro no hover */
+  transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
+}
+
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c7d8c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  width: 90%;
+  max-width: 800px;/*largura*/
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  color: #2b4c40;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2b4c40;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: calc(100% - 20px); /* Ajuste para o espaço */
+  padding: 8px; /* Ajuste para menor */
+  border: 2px solid #d9eedb;
+  border-radius: 8px;
+  background-color: #f0f8f0d7; /*cor do fundo do campo de dados*/
+  color: #2b4c40;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2b4c40;
+  background-color: #ffffff;
+}
+
+.password-container {
+  position: relative; /* Para o ícone do olho */
+}
+
+.password-container input {
+  padding-right: 30px; /* Espaço para o ícone */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px; /* Ajuste a posição */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.name-birth, .position-salary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-group, .birth-group, .position-group, .salary-group {
+  width: 48%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #c7d8c9;
+  color: #2b4c40;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+}
+
+button:hover {
+  background-color: #2b4c40;
+  color: #ffffff;
+}
+
+.confirmation {
+  text-align: center;
+  margin-top: 10px;
+}
+.confirmation {
+  position: fixed; /* Fixa no meio da tela */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Fica acima de outros elementos */
+}
+
+.confirmation-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+

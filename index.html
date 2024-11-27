@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Finesse - Login</title>
+    <link rel="stylesheet" href="Entre_outros/Login.css">
+    <style>
+        /* Estilo do botão de login */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #004d33; /* Verde escuro */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00664d; /* Tom mais claro no hover */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="Imagem/plano de fundo.jpg" alt="Imagem de Planta">
+        </div>
+        <div class="right">
+            <div class="logo-container">
+                <h1>Flora Finesse</h1>
+                <img src="Imagem/logo.png" alt="Logo" class="logo">
+            </div>
+            <h2>Faça o seu login</h2>
+            <form action="Entre_outros/logon.php" method="post">
+                <div class="input-group">
+                    <input type="number" placeholder="ID Funcionário" required id="id" name="id">
+                    <img src="Imagem/user.png" alt="User Icon" class="input-icon">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Password" required id="password" name="senha">
+                    <img src="Imagem/padlock.png" alt="Lock Icon" class="input-icon">
+                    <a alt="Eye Icon" class="toggle-password"></a>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Lembre-me</label>
+                    <a href="#" class="underline">Esqueceu a senha?</a>
+                </div>
+                <br><br>
+                <input type="submit" value="Login">
+                <p class="signup-text">Não tem uma conta? <a href="" class="signup">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
